@@ -25,7 +25,12 @@ const Login = () => {
                 navigate('/')
             }
             else{
-                alert('There was something wrong with your input! Please try again')
+                for(var propName in data) {
+                    if(data.hasOwnProperty(propName)) {
+                        var propValue = data[propName];
+                        alert(propName.charAt(0).toUpperCase() + propName.slice(1) + ': ' + propValue)
+                    }
+                }
             }
         }
         catch(error){

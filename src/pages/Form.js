@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Form = () => {
     const [name, setName] = useState("")
@@ -28,15 +28,21 @@ const Form = () => {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(entry)})
+            const data = await res.json()
             setIsPending(false)
             if (res.status === 400) {
-                navigate('../formerror')
+                for(var propName in data) {
+                    if(data.hasOwnProperty(propName)) {
+                        var propValue = data[propName];
+                        alert(propName.charAt(0).toUpperCase() + propName.slice(1) + ': ' + propValue)
+                    }
+                }
             }
             else{
                 navigate('../submitted')
             }
         }catch(error){
-            console.log('error')
+            console.log(error)
             setIsPending(false)
         }
     }

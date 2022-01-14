@@ -78,7 +78,13 @@ const Home = () => {
 
     return (
         <div>
-            <table className='table'>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css	"/>
+            <div className="mycontainer">
+            <h2>
+                Reluvate Employees
+            </h2>
+            <div className='table-adjustments'>
+            <table className='table table-striped table-bordered'>
                 <thead className='table-header'>
                     <tr>
                         <th>
@@ -168,6 +174,8 @@ const Home = () => {
                     )}
                 </tbody>
             </table>
+            </div>
+            </div>
         </div>
     )
 }
