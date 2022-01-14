@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Greg",
+        "email": "greg@gmail.com",
+        "gender": "Male",
+        "nric": "123456789",
+        "start": "2020-05-20",
+        "end": "2022-08-16",
+        "birthday": "2001-08-22",
+        "address": "texas road",
+        "bank": "DBS",
+        "bank_number": "444444444444",
+        "salary": "2000"
+    },
+    {
+        "id": 2,
+        "name": "James",
+        "email": "james@gmail.com",
+        "gender": "Male",
+        "nric": "987654321",
+        "start": "2010-05-20",
+        "end": null,
+        "birthday": "2006-08-22",
+        "address": "thompson road",
+        "bank": "POSB",
+        "bank_number": "111111111111",
+        "salary": "99999"
+    },
+    {
+        "id": 3,
+        "name": "Lily",
+        "email": "lily@gmail.com",
+        "gender": "Female",
+        "nric": "654987321",
+        "start": "2021-05-20",
+        "end": "2023-08-16",
+        "birthday": "20012-08-22",
+        "address": "upper changi road",
+        "bank": "Maybank",
+        "bank_number": "000000000000",
+        "salary": "2"
+    }
+]
